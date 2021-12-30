@@ -26,3 +26,9 @@ jobs:
     - name: Install dependencies
       run: |
         pipenv install --deploy --dev
+    - name: Run Lint
+      run: |
+        pipenv run lint
+    - name: Run Test
+      run: |
+        pipenv run test
